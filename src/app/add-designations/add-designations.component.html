@@ -1,0 +1,31 @@
+<body>
+    <form (ngSubmit)="submit(a)" #a="ngForm">
+        <mat-form-field appearance="legacy">
+            <mat-label>Grade</mat-label>
+            <input matInput placeholder="enter a work grade/designation" type="text" ngModel name="grade" required>
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+            <mat-select placeholder="Level" ngModel name='level' required>
+                <mat-option value=" ">-- None --</mat-option>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+                <mat-option value="10">10</mat-option>
+            </mat-select>
+            <mat-hint>Select 'None' if no level is available</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+            <mat-label>Pay</mat-label>
+            <input matInput placeholder="enter a work grade/designation pay" type="number" ngModel name="pay" required>
+            <mat-icon matSuffix>money</mat-icon>
+        </mat-form-field><br><br><br>
+        <button mat-button type="reset" (click)='onClose()'>Cancel</button>
+        <button mat-raised-button type="submit" color='primary' id="submit">Submit</button>
+    </form>
+</body>

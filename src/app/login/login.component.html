@@ -1,0 +1,24 @@
+<mat-progress-bar id="progressBar" mode="indeterminate" *ngIf="showProgress"></mat-progress-bar>
+<body>
+    <b id="logo" routerLink="/"><span id="pay">PAY</span><span id="roll">ROLL</span></b>
+    <div class="login">
+        <h2>Login</h2>
+        <form (ngSubmit)="submit(a)" #a="ngForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <mat-icon matPrefix>alternate_email</mat-icon>
+                <input matInput placeholder="enter your email" type="email" ngModel name="email" required>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <mat-icon matPrefix>lock</mat-icon>
+                <input matInput placeholder="enter your password" type="password" ngModel name="password" required>
+            </mat-form-field>
+            <mat-checkbox color='primary'><b>Remember me</b></mat-checkbox>
+            <p id="forgot"><b><a>Forgot your password?</a></b></p><br>
+            <button mat-flat-button><b>Login</b></button>
+            <p id="signup">Not a member yet? <b><a routerLink='/signup'>Create your account</a></b></p>
+            <p id="error">{{error}}</p>
+        </form>
+    </div>
+</body>

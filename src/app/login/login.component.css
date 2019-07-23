@@ -1,0 +1,84 @@
+body {
+    padding: 20px;
+}
+
+body .login {
+    max-width: 450px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff !important;
+    border-top: 5px solid #2196F3;
+    box-shadow: 5px 4px 5px #888888;
+}
+
+.login h2 {
+    color: #7796A6;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form {
+    width: 100%;
+    padding: 30px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+mat-checkbox {
+    color: #7796A6;
+}
+
+mat-icon {
+    margin-right: 10px;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px white inset;
+}
+
+form #forgot {
+    float: right;
+    color: #B0DAFA;
+}
+
+form button {
+    color: #fff;
+    background-color: #2196F3;
+    margin: 15px 0 25px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+form #signup {
+    text-align: center;
+    color: #B0DAFA;
+}
+
+#pay {
+    color: #7796A6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+#roll {
+    font-size: 25px;
+    color: #2196F3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#error {
+    color: red;
+    font-style: oblique;
+    text-align: center;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#progressBar {
+    position: fixed;
+}

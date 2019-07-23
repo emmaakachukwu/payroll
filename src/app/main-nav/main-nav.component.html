@@ -1,0 +1,39 @@
+<mat-sidenav-container class="sidenav-container">
+        <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+            [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+            [mode]="(isHandset$ | async) ? 'over' : 'side'"
+            [opened]="!(isHandset$ | async)">
+          <mat-toolbar id="payroll"><b>PAYROLL</b></mat-toolbar>
+          <img src="../../assets/img/avatar.png" alt="user logo" id="userlogo">
+          <mat-nav-list>
+            <a mat-list-item routerLink="/main-nav/dashboard"><mat-icon>navigate_next</mat-icon>Dashboard</a>
+            <a mat-list-item routerLink="/main-nav/designations"><mat-icon>navigate_next</mat-icon>Designation and Level</a>
+            <a mat-list-item href="#"><mat-icon>navigate_next</mat-icon>Employees</a>
+            <a mat-list-item href="#"><mat-icon>navigate_next</mat-icon>Deductions</a>
+            <a mat-list-item href="#"><mat-icon>navigate_next</mat-icon>Penalties</a>
+            <a mat-list-item href="#"><mat-icon>navigate_next</mat-icon>Settings</a>
+          </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <mat-toolbar id="toolbar">
+            <button
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle()"
+            *ngIf="isHandset$ | async">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+            <b><span id="pay">PAY</span><span id="roll">ROLL</span></b>
+            <button id="accountcircle" mat-button [matMenuTriggerFor]='menu' title="user"><mat-icon>account_circle</mat-icon></button>
+            <mat-menu #menu='matMenu'>
+              <button mat-menu-item>View Profile</button>
+              <button mat-menu-item>Logout</button>
+            </mat-menu>
+          </mat-toolbar>
+          <!-- Add Content Here -->
+          <div id="content">
+            <router-outlet></router-outlet>
+          </div>
+        </mat-sidenav-content>
+      </mat-sidenav-container>

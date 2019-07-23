@@ -1,0 +1,31 @@
+body {
+   background-color: #fff;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+#submit {
+    float: right;
+}
+
+button:focus {
+    outline: 0;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px white inset;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}

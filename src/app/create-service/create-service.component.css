@@ -1,0 +1,56 @@
+body {
+    padding: 0 0 10px 0;
+}
+
+body .login {
+    max-width: 450px;
+    margin: auto;
+    background-color: #fff !important;
+    border-top: 5px solid #FFF;
+}
+
+h2 {
+    color: #7796A6;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form {
+    width: 100%;
+    padding: 30px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+form button {
+    color: #fff;
+    background-color: #2196F3;
+    margin: 15px 0 25px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+form #signup {
+    text-align: center;
+    color: #B0DAFA;
+}
+
+#error {
+    color: red;
+    font-style: oblique;
+    text-align: center;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #fff inset;
+}
+
+#progressBar {
+    max-width: 450px;
+}
+
+button :disabled { background: green; }

@@ -1,0 +1,27 @@
+<body>
+    <div class="login">
+      <h2>Create a Service</h2>
+      <form (ngSubmit)="submit(a)" #a="ngForm">
+        <mat-form-field appearance="outline">
+          <mat-label>URL</mat-label>
+          <input matInput placeholder="enter your preffered URL for this service" type="text" ngModel name = "url" required>
+          <mat-hint id="error" text-allign="left">{{urlError}}</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Business/Company Name </mat-label>
+          <input matInput placeholder="enter your business/company name" type="text" ngModel name = "name" required>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Address</mat-label>
+          <input matInput placeholder="enter your business/company address" type="text" ngModel name = "address" required>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Phone</mat-label>
+          <input matInput placeholder="enter your business/company phone contact" type="text" pattern=".{10,11}" title="enter a valid phone number eg. 08x xxxx xxxx" ngModel name = "phone" required>
+        </mat-form-field>
+        <button mat-flat-button type="submit" [disabled]="!a.valid"><b>Create Service</b></button>
+        <p id="error">{{error}}</p>
+       
+      </form>
+    </div> 
+</body>

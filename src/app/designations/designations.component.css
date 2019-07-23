@@ -1,0 +1,43 @@
+#design-btn {
+    color: #7796A6;
+    width: 20%;
+    min-width: 20%;
+    height: 50px;
+    padding: 2px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+mat-form-field {
+    width: 78%;
+    margin-left: 2%;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #f1f1f1 inset;
+}
+
+mat-icon {
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.clear {
+    color: #aaa;
+    font-size: 28px;
+}
+  
+.clear:hover, .clear:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.action {
+    cursor: pointer;
+}
